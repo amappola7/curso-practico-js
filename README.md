@@ -1,4 +1,4 @@
-# curso-practico-js
+# Curso Práctico de JavaScript
 Ejercicios del curso práctico de JavaScript de Platzi.
 
 ...
