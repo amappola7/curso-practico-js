@@ -1,6 +1,7 @@
-// Área y perímetro del cuadrado
+// Funciones para calcular el área y perímetro de las figuras
 
-function cuadrado(lado) {
+ // Área y perímetro del cuadrado
+function calculoCuadrado(lado) {
     perimetroCuadrado = lado*4;
     console.log(`El perímetro del cuadrado es ${perimetroCuadrado}`);
 
@@ -9,8 +10,7 @@ function cuadrado(lado) {
 }
 
 // Área y perímetro del triángulo
-
-function triangulo(lado1, lado2, base, altura) {
+function calculoTriangulo(lado1, lado2, base, altura) {
     perimetroTriangulo = lado1 + lado2 + base;
     console.log(`El perímetro del triángulo es ${perimetroTriangulo}`)
 
@@ -19,11 +19,12 @@ function triangulo(lado1, lado2, base, altura) {
 }
 
 // Área y perímetro del círculo
-
-function circulo(radio) {
+function calculoCirculo(radio) {
     const pi = Math.PI;
+
     let diametro = radio*2;
     console.log(`El diámetro del círculo es ${diametro}`)
+
     perimetroCirculo = diametro*pi;
     console.log(`El perímetro del círculo es ${perimetroCirculo}`)
 
@@ -31,4 +32,38 @@ function circulo(radio) {
     console.log(`El área del círculo es ${areaCirculo}`);
 }
 
+// Funciones para mostrar el cálculo en la página web
+
+// Cuadrado
+function showCuadrado() {
+   const input = document.getElementById("ladoCuadrado");
+   const value = input.value;
+   const calculo = calculoCuadrado(value);
+   alert(calculo);
+}
+
+// Triángulo
+function showTriangulo() {
+    const inputLado1 = document.getElementById("lado1Triangulo");
+    const valueLado1 = inputLado1.value;
+    const inputLado2 = document.getElementById("lado2Triangulo");
+    const valueLado2 = inputLado2.value;
+    const inputBase = document.getElementById("ladobTriangulo");
+    const valueBase = inputBase.value;
+    const inputAltura = document.getElementById("alturaTriangulo");
+    const valueAltura = inputAltura.value;
+
+    const calculo = calculoTriangulo(valueLado1, valueLado2, valueBase, valueAltura);
+    alert(calculo)
+    
+    
+}
+
+// Círculo
+function showCirculo() {
+    const input = document.getElementById("radioCirculo");
+    const value = input.value;
+    const calculo = calculoCirculo(value);
+    alert(calculo)
+}
 
