@@ -11,31 +11,34 @@
     <main>
         <p>Ingresa aquí las dimensiones de tus figuras:</p>
         <form action="#">
-            <fieldset>
                 <div>
                     <legend>Cuadrado</legend>
                     <label for="ladoCuadrado">Lado</label>
                     <input type="number" id="ladoCuadrado" name="ladoCuadrado">
-                    <input type="submit">
+                    <button type="button" onclick="showCuadrado()"></button>
                 </div>
-                <div>
-                    <legend>Triangulo</legend>
-                    <label for="lado1Triangulo">Lado 1</label>
-                    <input type="number" id="lado1Triangulo" name="lado1Triangulo">
-                    <label for="lado2Triangulo">Lado 2</label>
-                    <input type="number" id="lado2Triangulo" name="lado2Triangulo">
-                    <label for="ladobTriangulo">Base</label>
-                    <input type="number" id="ladobTriangulo" name="ladobTriangulo">
-                    <label for="alturaTriangulo">Altura</label>
-                    <input type="number" id="alturaTriangulo" name="alturaTriangulo">
-                </div>
-                <div>
-                    <legend>Círculo</legend>
-                    <label for="radioCirculo">Radio</label>
-                    <input type="number" id="radioCirculo" name="radioCirculo">
-                    <input type="submit">
-                </div>
-            </fieldset>
+        </form>
+        <form action="">
+            <div>
+                <legend>Triangulo</legend>
+                <label for="lado1Triangulo">Lado 1</label>
+                <input type="number" id="lado1Triangulo" name="lado1Triangulo">
+                <label for="lado2Triangulo">Lado 2</label>
+                <input type="number" id="lado2Triangulo" name="lado2Triangulo">
+                <label for="ladobTriangulo">Base</label>
+                <input type="number" id="ladobTriangulo" name="ladobTriangulo">
+                <label for="alturaTriangulo">Altura</label>
+                <input type="number" id="alturaTriangulo" name="alturaTriangulo">
+                <button type="button" onclick="showTriangulo()"></button>
+            </div>
+        </form>
+        <form action="">
+            <div>
+                <legend>Círculo</legend>
+                <label for="radioCirculo">Radio</label>
+                <input type="number" id="radioCirculo" name="radioCirculo">
+                <button type="button" onclick="showCirculo()"></button>
+            </div>
         </form>
     </main>
     <script src="./figuras.js"></script>
