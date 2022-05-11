@@ -1,35 +1,39 @@
 // Funciones para calcular el área y perímetro de las figuras
 
  // Área y perímetro del cuadrado
-function calculoCuadrado(lado) {
+function perimetroCuadrado(lado) {
     perimetroCuadrado = lado*4;
-    console.log(`El perímetro del cuadrado es ${perimetroCuadrado}`);
+    return `El perímetro del cuadrado es ${perimetroCuadrado}`;
+}
 
+function areaCuadrado(lado) {
     areaCuadrado = Math.pow(lado,2);
-    console.log(`El área del cuadrado es ${areaCuadrado}`);
+    return `El área del cuadrado es ${areaCuadrado}`;
 }
 
 // Área y perímetro del triángulo
-function calculoTriangulo(lado1, lado2, base, altura) {
+function perimetroTriangulo(lado1, lado2, base) {
     perimetroTriangulo = lado1 + lado2 + base;
-    console.log(`El perímetro del triángulo es ${perimetroTriangulo}`)
+    return `El perímetro del triángulo es ${perimetroTriangulo}`;
+}
 
+function areaTriangulo(base, altura) {
     areaTriangulo = (base*altura)/2;
-    console.log(`El área del triángulo es ${areaTriangulo}`)
+    return `El área del triángulo es ${areaTriangulo}`;
 }
 
 // Área y perímetro del círculo
-function calculoCirculo(radio) {
+function perimetroCirculo(radio) {
     const pi = Math.PI;
-
     let diametro = radio*2;
-    console.log(`El diámetro del círculo es ${diametro}`)
 
     perimetroCirculo = diametro*pi;
-    console.log(`El perímetro del círculo es ${perimetroCirculo}`)
+    return `El perímetro del círculo es ${perimetroCirculo}`;
+}
 
+function areaCirculo(radio) {
     areaCirculo = (Math.pow(radio,2))*pi;
-    console.log(`El área del círculo es ${areaCirculo}`);
+    return `El área del círculo es ${areaCirculo}`;
 }
 
 // Funciones para mostrar el cálculo en la página web
