@@ -110,3 +110,14 @@ function alturaTIsosceles(ladoA1, ladoA2, ladoB) {
     altura = altura.toFixed(2);
     return `La altura del triángulo isósceles es de ${altura}`;
 }
+
+function showAlturaIsosceles(){
+    const inputLadoA1 = document.getElementById("ladoA1Isosceles");
+    const valueLadoA1 = inputLadoA1.value;
+    const inputLadoA2 = document.getElementById("ladoA2Isosceles");
+    const valueLadoA2 = inputLadoA2.value;
+    const inputLadoB = document.getElementById("ladoBIsosceles");
+    const valueLadoB = inputLadoB.value;
+    const calculo = alturaTIsosceles(valueLadoA1, valueLadoA2, valueLadoB);
+    alert(calculo);
+}
