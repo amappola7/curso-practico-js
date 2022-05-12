@@ -102,13 +102,13 @@ function alturaTIsosceles(ladoA1, ladoA2, ladoB) {
     ladoA2 = Number(ladoA2);
     ladoB = Number(ladoB);
 
-    if (ladoA1 != ladoA2){
-        alert("Los lados del triángulo son diferentes, la altura será incorrecta")
+    if (ladoA1 == ladoA2){
+        let altura = ((Math.sqrt((Math.pow(ladoA1,2))-((Math.pow(ladoB,2))/4))));
+        altura = altura.toFixed(2);
+        return `La altura del triángulo isósceles es de ${altura}`;
+    } else {
+        return "Los lados del triángulo son diferentes, la altura no puede ser calculada.";
     }
-
-    let altura = ((Math.sqrt((Math.pow(ladoA1,2))-((Math.pow(ladoB,2))/4))));
-    altura = altura.toFixed(2);
-    return `La altura del triángulo isósceles es de ${altura}`;
 }
 
 function showAlturaIsosceles(){
