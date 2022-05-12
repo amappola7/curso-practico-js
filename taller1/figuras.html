@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1 | Calculadora Áreas y Perímetros</title>
+</head>
+<body>
+    <header><h1>Taller 1: Calculadora de Áreas y Perímetros</h1></header>
+    <main>
+        <p>Ingresa aquí las dimensiones de tus figuras:</p>
+        <form action="#">
+                <div>
+                    <legend>Cuadrado</legend>
+                    <label for="ladoCuadrado">Lado</label>
+                    <input type="number" id="ladoCuadrado" name="ladoCuadrado">
+                    <button type="button" onclick="showPerimetroCuadrado()">Perímetro</button>
+                    <button type="button" onclick="showAreaCuadrado()">Área</button>
+                </div>
+        </form>
+        <form action="">
+            <div>
+                <legend>Triángulo</legend>
+                <label for="lado1Triangulo">Lado 1</label>
+                <input type="number" id="lado1Triangulo" name="lado1Triangulo">
+                <label for="lado2Triangulo">Lado 2</label>
+                <input type="number" id="lado2Triangulo" name="lado2Triangulo">
+                <label for="ladobTriangulo">Base</label>
+                <input type="number" id="ladobTriangulo" name="ladobTriangulo">
+                <label for="alturaTriangulo">Altura</label>
+                <input type="number" id="alturaTriangulo" name="alturaTriangulo">
+                <button type="button" onclick="showPerimetroTriangulo()">Perímetro</button>
+                <button type="button" onclick="showAreaTriangulo()">Área</button>
+            </div>
+        </form>
+        <form action="">
+            <legend>Altura de un Triángulo Isósceles</legend>
+            <label for="ladoA1Isosceles">Lado 1</label>
+            <input type="number" id="ladoA1Isosceles" name="ladoA1Isosceles">
+            <label for="ladoA2Isosceles">Lado 2</label>
+            <input type="number" id="ladoA2Isosceles" name="ladoA2Isosceles">
+            <label for="ladoBIsosceles">Base</label>
+            <input type="number" id="ladoBIsosceles" name="ladoBIsosceles">
+            <button type="button" onclick="showAlturaIsosceles()">Calcular</button>
+        </form>
+        <form action="">
+            <div>
+                <legend>Círculo</legend>
+                <label for="radioCirculo">Radio</label>
+                <input type="number" id="radioCirculo" name="radioCirculo">
+                <button type="button" onclick="showPerimetroCirculo()">Perímetro</button>
+                <button type="button" onclick="showAreaCirculo()">Área</button>
+            </div>
+        </form>
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>
