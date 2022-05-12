@@ -14,13 +14,15 @@ function areaCuadrado(lado) {
 // Área y perímetro del triángulo
 function perimetroTriangulo(lado1, lado2, base) {
     lado1 = Number(lado1);
-    lado1 = Number(lado2);
-    lado1 = Number(base);
+    lado2 = Number(lado2);
+    base = Number(base);
     perimetroTriangulo = lado1 + lado2 + base;
     return `El perímetro del triángulo es ${perimetroTriangulo}`;
 }
 
 function areaTriangulo(base, altura) {
+    base = Number(base);
+    altura = Number(altura);
     areaTriangulo = (base*altura)/2;
     return `El área del triángulo es ${areaTriangulo}`;
 }
@@ -35,6 +37,8 @@ function perimetroCirculo(radio) {
 }
 
 function areaCirculo(radio) {
+    const pi = Math.PI;
+    radio = Number(radio);
     areaCirculo = (Math.pow(radio,2))*pi;
     return `El área del círculo es ${areaCirculo}`;
 }
@@ -72,7 +76,7 @@ function showAreaTriangulo(){
     const inputLadob = document.getElementById("ladobTriangulo")
     const valueLadob = inputLadob.value;
     const inputAltura = document.getElementById("alturaTriangulo")
-    const valueAltura= inputAltura.valueAltura;
+    const valueAltura= inputAltura.value;
     const calculo = areaTriangulo(valueLadob, valueAltura);
     alert(calculo);
 }
@@ -85,7 +89,7 @@ function showPerimetroCirculo() {
     alert(calculo)
 }
 
-function showPerimetroCirculo() {
+function showAreaCirculo() {
     const input = document.getElementById("radioCirculo");
     const value = input.value;
     const calculo = areaCirculo(value);
