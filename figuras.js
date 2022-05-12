@@ -47,10 +47,10 @@ function areaCirculo(radio) {
 
 // Cuadrado
 function showPerimetroCuadrado() {
-   const input = document.getElementById("ladoCuadrado");
-   const value = input.value;
-   const calculo = perimetroCuadrado(value);
-   alert(calculo);
+    const input = document.getElementById("ladoCuadrado");
+    const value = input.value;
+    const calculo = perimetroCuadrado(value);
+    alert(calculo);
 }
 
 function showAreaCuadrado() {
@@ -96,3 +96,17 @@ function showAreaCirculo() {
     alert(calculo)
 }
 
+// Altura de un triángulo isósceles
+function alturaTIsosceles(ladoA1, ladoA2, ladoB) {
+    ladoA1 = Number(ladoA1);
+    ladoA2 = Number(ladoA2);
+    ladoB = Number(ladoB);
+
+    if (ladoA1 != ladoA2){
+        alert("Los lados del triángulo son diferentes, la altura será incorrecta")
+    }
+
+    let altura = ((Math.sqrt((Math.pow(ladoA1,2))-((Math.pow(ladoB,2))/4))));
+    altura = altura.toFixed(2);
+    return `La altura del triángulo isósceles es de ${altura}`;
+}
