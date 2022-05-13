@@ -8,5 +8,19 @@
 </head>
 <body>
     <header><h1>Taller 2: Porcentajes y Descuentos</h1></header>
+    <main>
+        <p>Ingresa aquí el precio y el porcentaje de descuento para calcular cuánto debes pagar en total:</p>
+        <form action="">
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio" required>
+            <label for="descuento">Descuento</label>
+            <input type="number" id="descuento" name="descuento">
+            <button type="button" onclick="showTotal()">Calcular</button>
+        </form>
+        <h2 id="showInScreen"></h2>
+    </main>
+    <section>
+        <script src="./pyd.js"></script>
+    </section>
 </body>
 </html>
