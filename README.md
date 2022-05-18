@@ -13,3 +13,9 @@ Ejercicios del curso práctico de JavaScript de Platzi.
 - Paso 1. Definir las fórmulas.
 - Paso 2. Encapsular fórmulas en funciones.
 - Paso 3. Integrar HTML y JavaScript.
+
+## Taller 3. Moda, Media y Mediana.
+- Paso 1. Definir fórmulas.
+- Paso 2. Encapsular fórmulas en funciones.
+- Paso 3. Integrar HTML y JavaScript.
+
